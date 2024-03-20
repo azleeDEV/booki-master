@@ -165,3 +165,66 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+
+body{
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+h1, h2{
+    font-size: clamp(20px, 3vw, 25px);
+}
+
+.centrer-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+
+/* header */
+
+.header-accueil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 80px 0 20px; 
+}
+
+.header-logo img{
+    width: 70px;
+
+}
+
+/* Nav */
+
+.header-nav{
+    height: 95%;
+}
+
+.item-nav a:hover {
+
+       color: #0065FC;
+       border-top: #0065FC;
+}
+
