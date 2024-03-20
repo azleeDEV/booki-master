@@ -311,16 +311,19 @@ form{
 .box-filtre:nth-child(2) .filtre-logo:after{
     content: '\f53a';
     font-family: 'FontAwesome';
+    color: #0065FC;
 }
 
 .box-filtre:nth-child(3) .filtre-logo:after{
     content: '\e59d';
     font-family: 'FontAwesome';
+    color: #0065FC;
 }
 
 .box-filtre:nth-child(4) .filtre-logo:after{
     content: '\f004';
     font-family: 'FontAwesome';
+    color: #0065FC;
 }
 
 .box-filtre:nth-child(5) .filtre-logo:after{
@@ -337,7 +340,7 @@ form{
 }
 
 .box-filtre:hover{
-    color: white;
+    color: #0065FC;
 }
 
 /* iNfo */
