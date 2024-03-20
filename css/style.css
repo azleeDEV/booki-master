@@ -212,7 +212,7 @@ li{
 }
 
 .header-logo img{
-    width: 70px;
+    width: 110px;
 
 }
 
@@ -226,5 +226,147 @@ li{
 
        color: #0065FC;
        border-top: #0065FC;
+}
+
+
+form{
+    display: flex;
+    height: 60px;
+    border: none;
+}
+
+
+.search{
+    
+    border: none;
+    border: 2px solid #F2F2F2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    max-width: 300px;
+    min-width: 160px;
+    width: 100%;
+ 
+}
+
+
+.fa-solid {
+    background-color: rgb(235, 235, 235);
+    padding: 5px;
+    width: 60px;
+    height: 50px;
+    border-radius: 15px 0px 0px 15px ;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-location-dot{
+    color: black;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.submit{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    padding: 0 10px;
+    border: none;
+
+}
+
+.filtres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 0;
+    font-size: clamp(12px, 3vw, 16px);
+    gap: 40px;
+}
+
+.box-filtre{
+    border: solid 2px rgb(224, 221, 221);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.filtre-logo{
+    position: relative;
+    margin: 0px;
+    right: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    transition: all 0.4s ease-in-out;
+}
+
+.box-filtre:nth-child(2) .filtre-logo:after{
+    content: '\f53a';
+    font-family: 'FontAwesome';
+}
+
+.box-filtre:nth-child(3) .filtre-logo:after{
+    content: '\e59d';
+    font-family: 'FontAwesome';
+}
+
+.box-filtre:nth-child(4) .filtre-logo:after{
+    content: '\f004';
+    font-family: 'FontAwesome';
+}
+
+.box-filtre:nth-child(5) .filtre-logo:after{
+    /*ICON FLAMMES*/
+    font-family: 'FontAwesome';
+}
+
+.box-filtre h3{
+    padding: 0 20px 0 10px;
+}
+
+.box-filtre:hover .filtre-logo{
+    transform: rotate(360deg);
+}
+
+.box-filtre:hover{
+    color: white;
+}
+
+/* iNfo */
+
+.conteneur-info{
+    display: flex;
+    align-items: center;
+}
+
+.conteneur-info p{
+    font-size: clamp(14px, 3vw, 18px);
+}
+
+.logo-info{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin-right: 15px;
+    border: 1px solid rgb(223, 220, 220);
+    color: #000000;
+}
+
+.logo-info:hover{
+    color: #0065FC;
+}
+
+.logo-info::after{
+    content: '\f129';
+    font-family: 'FontAwesome';
 }
 
