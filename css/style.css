@@ -13,6 +13,8 @@
     color: var(--main-color);
 }
 
+
+
 body {
     display: flex;
     justify-content: center;
@@ -48,6 +50,10 @@ a {
 
 .card-title {
     font-size: 16px;
+}
+
+.card-rating  {
+    display: flex;   
 }
 
 .euro {
@@ -279,6 +285,8 @@ form{
 
 }
 
+/* les filtres */
+
 .filtres {
     display: flex;
     flex-wrap: wrap;
@@ -295,6 +303,9 @@ form{
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+.box-filtre:hover {
+    background-color: #DEEBFF;
 }
 
 .filtre-logo{
@@ -373,3 +384,43 @@ form{
     font-family: 'FontAwesome';
 }
 
+/* les hebergements */
+
+.cartes{
+    gap: 20px;
+    display: grid;
+}
+
+
+.box-carte-hebergement{
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 31%;
+    height: 230px;
+    cursor: pointer;
+    border: 5px solid #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.190);
+    background-color: rgb(255, 255, 255);
+}
+
+.box-carte-hebergement img {
+    object-fit: cover;
+    width: 90%;
+    border-radius: 20px 20px 0 0 ;
+    height: 60%;
+}
+
+.card-content{
+    padding: 10px 15px;
+}
+
+.card-content p {
+    margin: 5px 0;
+}
+
+.hebergements h3{
+
+    padding-top: 20px;
+    cursor: pointer;
+}
