@@ -252,6 +252,7 @@ form{
     max-width: 300px;
     min-width: 160px;
     width: 100%;
+    cursor: pointer;
  
 }
 
@@ -282,6 +283,7 @@ form{
     border-radius: 0 20px 20px 0;
     padding: 0 10px;
     border: none;
+    cursor: pointer;
 
 }
 
@@ -387,8 +389,9 @@ form{
 /* les hebergements */
 
 .cartes{
-    gap: 20px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -400,27 +403,37 @@ form{
     height: 230px;
     cursor: pointer;
     border: 5px solid #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.190);
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background-color: rgb(255, 255, 255);
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box-carte-hebergement img {
     object-fit: cover;
-    width: 90%;
+    width: 100%;
     border-radius: 20px 20px 0 0 ;
     height: 60%;
 }
 
 .card-content{
     padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card-content p {
     margin: 5px 0;
+    padding-top: 1px;
 }
 
 .hebergements h3{
 
     padding-top: 20px;
     cursor: pointer;
+}
+
+.box-carte-hebergement h4{
+    margin: 0px;
 }
