@@ -73,7 +73,7 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 5px 30px 30px 30px;
     box-sizing: border-box;
 }
 
@@ -85,6 +85,7 @@ a {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    display: grid;
 }
 
 .populaires-title {
@@ -95,12 +96,12 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 32px;
+    height: 26%;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
