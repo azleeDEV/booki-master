@@ -167,6 +167,25 @@ a {
         font-size: 13px;
     }
 }
+/* tablette responsive */
+
+ @media screen and (max-width: 1024px) {
+
+    .box-filtre figure{
+        width: 20px;
+        margin-left: 13px;
+    }
+
+   .card-rating {
+    display:block
+    }
+
+    .populaires-title {
+        padding-top: 13px;  
+      }
+
+
+} 
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -304,15 +323,12 @@ form{
     border-radius: 100px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 .box-filtre:hover {
     background-color: #DEEBFF;
 }
 
 .filtre-logo{
-    position: relative;
     margin: 0px;
     right: 5px;
     border-radius: 50%;
@@ -323,19 +339,16 @@ form{
 }
 
 .box-filtre:nth-child(2) .filtre-logo:after{
-    content: '\f53a';
     font-family: 'FontAwesome';
     color: #0065FC;
 }
 
 .box-filtre:nth-child(3) .filtre-logo:after{
-    content: '\e59d';
     font-family: 'FontAwesome';
     color: #0065FC;
 }
 
 .box-filtre:nth-child(4) .filtre-logo:after{
-    content: '\f004';
     font-family: 'FontAwesome';
     color: #0065FC;
 }
@@ -474,7 +487,7 @@ form{
 }
 
 .div-activités h4{
-   margin-left: 15px ;
+   margin: 15px ;
 }
 
 /* footer */
