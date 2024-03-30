@@ -392,11 +392,11 @@ form{
     padding: 0px;
     margin-right: 15px;
     border: 1px solid rgb(223, 220, 220);
-    color: #000000;
+    color: #0065FC;
 }
 
 .logo-info:hover{
-    color: #0065FC;
+    color: #000000;
 }
 
 .logo-info::after{
