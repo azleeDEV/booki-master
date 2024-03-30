@@ -172,8 +172,7 @@ a {
 @media screen and (max-width: 1024px) {
 
     .box-filtre img{
-        width: 20px;
-        margin-left: 13px;
+        margin: 0 0 0 13px;
     }
 
    .card-rating {
@@ -186,7 +185,11 @@ a {
 
     .populaires-cards .card{
         height:auto
-    }   
+    }  
+     
+    .card-activités img{
+        height:81%;
+    }
 
 } 
 
@@ -201,10 +204,6 @@ body{
     max-width: 1440px;
 }
 
-h1, h2{
-    font-size: clamp(20px, 3vw, 25px);
-}
-
 .centrer-flex{
     display: flex;
     justify-content: center;
@@ -217,12 +216,6 @@ img{
     object-fit: cover;
     object-position: center;
 }
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
 
 li{
     list-style-type: none;
