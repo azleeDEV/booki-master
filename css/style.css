@@ -38,13 +38,6 @@ a {
     font-size: 22px;
 }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
 .card img {
     object-fit: cover;
 }
@@ -54,7 +47,7 @@ a {
 }
 
 .card-rating  {
-    display: flex;
+    padding-top: 10px;
 }
 
 .euro {
@@ -71,13 +64,17 @@ a {
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements-and-populaires > section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 5px 30px 30px 30px;
+    padding: 5px 30px 30px;
     box-sizing: border-box;
 }
 
+.hebergements h2{
+    margin: 20px 0;
+    padding-left: 13px;
+}
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
@@ -86,7 +83,20 @@ a {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.populaires h2{
+    width: 90%;
+    height: 30px;
+    margin: 20px 0;
+    padding-left: 13px;
+}
+
+.populaires i{
+    height: 30px;
+    margin: 20px 0;
 }
 
 .populaires-title {
@@ -95,16 +105,31 @@ a {
     align-items: center;
 }
 
-.populaires-cards .card {
+.populaires-cards{
     display: flex;
-    margin-top: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 10px
+}
+
+.populaires-cards a {
     height: 26%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 100%;
+}
+.populaires-cards a article {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 .populaires-cards img {
     width: 33%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    height: 100%;
 }
 
 .populaires-cards .card-content {
@@ -143,6 +168,12 @@ a {
 
     .hebergements {
         width: 100%;
+    }
+
+    .afficher-plus {
+
+        padding-left: 13px;
+
     }
 
     .populaires {
@@ -187,7 +218,7 @@ a {
         height:auto
     }  
      
-    .card-activités img{
+    .card-activites img{
         height:81%;
     }
 
@@ -195,7 +226,42 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    header-accueil {
+        display:block
+    }
+
+    header-logo {
+        margin:auto;
+        padding: 0,0,25px,25px;
+    }
+    
+    header-presentation h1 {
+        font-size:21px;
+    }
+
+    header-presentation p {
+        font-size:15px; 
+    }
+
+    hebergements-and-populaires {
+        background-color:white;
+        padding:0px
+    }
+
+    box-carte-hebergement {
+        width:100%;
+    }
+
+    div-activités {
+        display:block;
+        width:100%;
+    }
+
+    footer {
+        width:auto;
+        display:block
+    }
 }
 
 
@@ -250,6 +316,20 @@ li{
 
        color: #0065FC;
        border-top: #0065FC;
+}
+
+.item-nav a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 3px;
+    background-color:#0065FC;
+    transition: width 0.4s ease-in-out;
+}
+
+.item-nav a:hover::before{
+    width: 10%;
 }
 
 
@@ -403,6 +483,7 @@ form{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 13px;
 }
 
 
@@ -411,7 +492,7 @@ form{
     border-radius: 20px;
     overflow: hidden;
     width: 31%;
-    height: 230px;
+    height: 250px;
     cursor: pointer;
     border: 5px solid #ffffff;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -430,8 +511,6 @@ form{
 
 .card-content{
     padding: 10px 15px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .card-content p {
@@ -439,9 +518,6 @@ form{
     padding-top: 1px;
 }
 
-.card-rating{
-    padding-top: 10px;
-}
 
 .hebergements h3{
 
@@ -460,7 +536,7 @@ form{
     padding-bottom: 15px;
 }
 
-.card-activités {
+.card-activites {
     cursor: pointer;
     width: 23%;
     filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.37));
@@ -470,19 +546,19 @@ form{
 }
     
 
-.card-activités img {
+.card-activites img {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     height: 87%;
 }
 
-.div-activités {
+.div-activites {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.div-activités h3{
+.div-activites h3{
    margin: 15px ;
 }
 
