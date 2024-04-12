@@ -46,7 +46,7 @@ a {
     font-size: 16px;
 }
 
-.card-rating  {
+.hebergements .card-rating  {
     padding-top: 10px;
     font-size: 17px;
 }
@@ -82,23 +82,30 @@ a {
 }
 
 /****** Populaires ***********/
+
+
+
+
 .populaires {
     width: 32%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.populaires h2{
-    width: 90%;
-    height: 30px;
-    margin: 20px 0;
-    padding-left: 13px;
+.populaires .popular-title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 13%;
+    align-items: center;
+    text-align: center;
 }
 
-.populaires i{
-    height: 30px;
-    margin: 20px 0;
+.populaires .popular-title i{
+    width: 30px;
 }
+
 
 .populaires-title {
     display: flex;
@@ -109,7 +116,7 @@ a {
 .populaires-cards{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px
+    height: 87%;
 }
 
 .populaires-cards a {
@@ -139,6 +146,16 @@ a {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    flex-direction: column;
+}
+
+.populaires-cards .card-content .card-txt{
+    height: 85%;
+}
+
+.populaires-cards .card-rating {
+    font-size: 17px;
+    height: 15%;
 }
 
 .populaires-cards .card-title {
@@ -149,12 +166,6 @@ a {
 .populaires-cards .card-subtitle {
     margin: 0;
 }
-
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
-}
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -192,10 +203,16 @@ a {
         margin-top: 50px;
     }
 
+    .populaires .popular-title{
+        text-align: justify;
+        padding: 10px;
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     .populaires-cards a {
@@ -203,8 +220,8 @@ a {
         height: 100%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
+    .populaires-cards img{
+        height: auto;
     }
 
     .populaires-cards .card-subtitle {
@@ -213,6 +230,10 @@ a {
 }
 /* tablette responsive */
 @media screen and (max-width: 1024px) {
+
+    .filtres h2{
+        width: 100%;
+    }
 
     .box-filtre img{
         margin: 0 0 0 13px;
@@ -225,9 +246,12 @@ a {
     .populaires-title {
         padding-top: 13px;  
       }
+    .populaires h2 {
+        width: 96%;
+      }
      
     .card-activites img{
-        height:81%;
+        height:81% !important;
     }
 
 } 
