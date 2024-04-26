@@ -277,11 +277,11 @@ nav ul {
     }
 
     .ping {
-        height: 44px !important;
+        height: 50px !important;
     }
 
     form {
-        height: 55px !important;
+        height: 60px !important;
     }
     .submit{
         display: none;
@@ -289,6 +289,7 @@ nav ul {
 
     .btn-form-mobile{
         display: inline-block !important;
+        width: 10%;
     }
 
     .header-accueil{
@@ -320,17 +321,28 @@ nav ul {
     }
 
     .search{
-        max-width: 60%;
         font-size: 15px !important;
+        width: 80%;
+    }
+
+    .section-recherche{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-recherche form{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .filtres{
-        gap: 20px !important;
         justify-content: space-between;
     }
 
     .box-filtre{
         width: 45%;
+        margin-top: 15px;
     }
 
     .box-filtre img{
@@ -520,9 +532,7 @@ form{
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
-    max-width: 300px;
-    min-width: 160px;
-    width: 100%;
+    /* width: auto; */
     cursor: pointer;
  
 }
@@ -610,7 +620,7 @@ form{
 
 .box-filtre h3{
     padding: 0 20px 0 10px;
-    font-size: 100%;
+    font-size: 95%;
 }
 
 .box-filtre:hover .filtre-logo{
@@ -681,7 +691,7 @@ form{
     object-fit: cover;
     width: 100%;
     border-radius: 20px 20px 0 0 ;
-    height: 60%;
+    height: 55%;
 }
 
 .card-content{
@@ -724,7 +734,7 @@ form{
 .card-activites img {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    height: 87%;
+    height: 384px;
 }
 
 .div-activites {
