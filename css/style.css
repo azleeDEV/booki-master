@@ -33,6 +33,13 @@ a {
     text-decoration: none;
 }
 
+nav ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -165,6 +172,7 @@ a {
 
 .populaires-cards .card-subtitle {
     margin: 0;
+    font-size: 14px;
 }
 
 
@@ -224,8 +232,18 @@ a {
 /* tablette responsive */
 @media screen and (max-width: 1024px) {
 
+
+    .filtres{
+        gap: 0 !important;
+
+    }
     .filtres h2{
         width: 100%;
+    }
+
+    .box-filtre {
+        margin-right: 5px;
+
     }
 
     .box-filtre img{
@@ -233,7 +251,7 @@ a {
     }
 
    .card-rating {
-    display:block
+        display:block
     }
 
     .populaires-title {
@@ -280,6 +298,23 @@ a {
         border-bottom: 3px #F2F2F2 solid;
     }
 
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        gap: 0;
+
+    }
+
+    nav ul li {
+        width: 50%;
+    }
+
+        
+
     .header-presentation {
         font-size: 90%;
     }
@@ -291,6 +326,7 @@ a {
 
     .filtres{
         gap: 20px !important;
+        justify-content: space-between;
     }
 
     .box-filtre{
@@ -354,7 +390,7 @@ a {
         width: 100%;
         margin-right: 0;
         background-color: white !important;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .cartes {
         flex-direction: column;
