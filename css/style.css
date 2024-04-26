@@ -222,7 +222,7 @@ nav ul {
     }
 
     .populaires-cards img{
-        height: auto;
+        height: 165px;
     }
 
     .populaires-cards .card-subtitle {
@@ -262,7 +262,7 @@ nav ul {
       }
      
     .card-activites img{
-        height:81% !important;
+        height:80% !important;
     }
 
 } 
@@ -307,6 +307,7 @@ nav ul {
 
     nav ul {
         gap: 0;
+        padding: 0;
 
     }
 
@@ -314,6 +315,19 @@ nav ul {
         width: 50%;
     }
 
+    .item-nav a::before{
+        height: auto !important;
+
+    }
+
+    .item-nav:hover {
+        border-bottom: 3px #0065FC solid;
+        border-top: none;
+    }
+
+    .hovermobile{
+        padding: 15px 0 29px 0
+    }
         
 
     .header-presentation {
