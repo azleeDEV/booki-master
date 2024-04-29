@@ -273,8 +273,12 @@ nav ul {
 
 
     .main-container{
-        padding: 0px 30px;
+        padding: 0px;
     }
+
+    /* main{
+        padding:  15px
+    } */
 
     .ping {
         height: 50px !important;
@@ -294,9 +298,11 @@ nav ul {
 
     .header-accueil{
         flex-direction: column;
-        margin: 20px -20px 0 -20px;
+        /* margin: 20px -20px 0 -20px; */
         padding-bottom: 10px;
         border-bottom: 3px #F2F2F2 solid;
+        /* padding: auto; */
+        margin-top: 20px;
     }
 
     nav {
@@ -332,6 +338,7 @@ nav ul {
 
     .header-presentation {
         font-size: 90%;
+        padding: 0 15px;
     }
 
     .search{
@@ -342,6 +349,7 @@ nav ul {
     .section-recherche{
         display: flex;
         flex-wrap: wrap;
+        padding: 0 15px;
     }
 
     .section-recherche form{
@@ -370,7 +378,7 @@ nav ul {
 
     .hebergements {
         border-radius: 0;
-        padding: 20px 0 20px 0 !important;
+        padding: 15px !important;
         background-color: white !important;
     }
 
@@ -383,24 +391,29 @@ nav ul {
     .populaires{
         width: 100%;
         margin-left: 0;
-        background-color: white !important;
+        /* background-color: white !important; */
+        border-radius: 0px !important;
         margin-top: auto;
-        padding: 5px 30px 30px 0px !important;
+        padding: 25px 15px !important;
     }
 
-    .populaires .populaires-title{
-       
+    /* .populaires .populaires-title{
         margin-bottom: 20px;
+    } */
+
+    .populaires .popular-title{
+        padding: 10px 0 !important;
     }
 
     .section-title{
-
         font-size: 18px;
     }
 
     .populaires-cards{
         flex-direction:column;
         gap: 30px;
+        width: 96%;
+        padding: 10px 0;
     }
 
     .populaires-cards a{
@@ -417,6 +430,7 @@ nav ul {
         margin-right: 0;
         background-color: white !important;
         flex-direction: column-reverse;
+        padding: 0;
     }
     .cartes {
         flex-direction: column;
@@ -425,11 +439,15 @@ nav ul {
         display: none;
     }
     .box-carte-hebergement {
-        width: 100% !important;
+        width: 96% !important;
         height: 240px !important;
     }
 
     /* Activités */
+    .Activites{
+        padding: 15px;
+    }
+
     .div-activites {
         flex-direction: column;
     }
@@ -442,15 +460,19 @@ nav ul {
 
     /* Footer */
     footer {
-        margin: 60px -20px 0 -20px;
-        flex-direction: column;
+        /* margin: 60px -20px 0 -20px; */
+        /* flex-direction: column; */
         font-size: 86%;
+        /* padding: 0 !important; */
     }
-    .a-propos .assistance .nos-hebergements {
-        width: 100%;
+    .a-propos, .assistance, .nos-hebergements {
+        width: 100% !important;
+        padding-left: 20px;
     }
 
-    
+    .a-propos ul,.a-propos h2 , .assistance ul,.assistance h2, .nos-hebergements ul, .nos-hebergements h2{
+        padding: 0;
+    } 
 }
 
 
@@ -682,6 +704,8 @@ form{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 13px;
+    padding-right: auto;
+    width: 100%;
 }
 
 
