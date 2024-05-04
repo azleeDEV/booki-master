@@ -339,6 +339,7 @@ nav ul {
     .header-presentation {
         font-size: 90%;
         padding: 0 15px;
+        text-align: center;
     }
 
     .search{
@@ -435,9 +436,7 @@ nav ul {
     .cartes {
         flex-direction: column;
     }
-    .afficher-plus {
-        display: none;
-    }
+    
     .box-carte-hebergement {
         width: 96% !important;
         height: 240px !important;
@@ -704,7 +703,6 @@ form{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 13px;
-    padding-right: auto;
     width: 100%;
 }
 
